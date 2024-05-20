@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%; /*os itens da lista devem ocupar 25% da tela*/
+    list-style: none;
+    position: relative;
+    max-height: 260px;
+    overflow-y: hidden; /*esconde a parte da imagem que ultrapassar o max-height. É como se fosse um corte da imagem via CSS. (y) pois queremos o corte no eixo vertical*/
+}
+
+ul li img {
+    width: 100%; /*as imagens devem ocupar 100% do espaço definido para os itens da lista (100% de 25%)*/
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /*tira a visibilidade do elemento (que será restaurada na estilização do HOVER abaixo*/
+    transition: all ease .5s; /*determina a forma que o elemento aparece/transiciona entre visivel e não visível*/
+}
+
+.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link { /*quando o cursor for passado sobre a imagem o "ver em tamanho..." */
+    opacity: 1; /*volta a ficar visível*/
+}

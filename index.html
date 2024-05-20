@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="imagens/girafa.jpg" alt="duas girafas">
+            <div class="overlay-imagem-link">
+                <a href="imagens/girafa.jpg" title="Ver imagem em tamanho real" target="_blank"> Ver imagem em tamanho real</a> 
+            </div>
+        </li>
+        <li>
+            <img src="imagens/flamingo.jpg" alt="dois flamingos">
+            <div class="overlay-imagem-link">
+                <a href="imagens/flamingo.jpg" title="Ver imagem em tamanho real" target="_blank"> Ver imagem em tamanho real</a> 
+            </div>
+        </li>
+        <li>
+            <img src="imagens/camaleao.jpg" alt="camaleão">
+            <div class="overlay-imagem-link">
+                <a href="imagens/camaleao.jpg" title="Ver imagem em tamanho real" target="_blank"> Ver imagem em tamanho real</a> 
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
